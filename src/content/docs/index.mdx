@@ -1,16 +1,22 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
-template: splash # Remove or comment out this line to display the site sidebar on this page.
+title: SafePoint 🩵 Keeping you safe
+head:
+    - tag: title
+      content: SafePoint 🩵 Keeping you safe 
+description: A safe space for students to be heard.
+template: splash
+editUrl: false
+lastUpdated: false
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  title: For a safer learning environment
+  tagline: A platform for students to confidently report incidents and to easily connect with counselors for support.
   image:
     file: ../../assets/houston.webp
   actions:
-    - text: Example Guide
+    - text: Sign-up now
       link: /guides/example/
       icon: right-arrow
-    - text: Read the Starlight docs
+    - text: Read the SafePoint docs
       link: https://starlight.astro.build
       icon: external
       variant: minimal
@@ -18,23 +24,17 @@ hero:
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## Next steps
-
 <CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
+	<Card title="Confidential Reporting" icon="seti:lock">
+		Provide details about an incident discreetly. Your identity is protected, and your reports are only seen by authorized staff.
 	</Card>
-	<Card title="Change page layout" icon="document">
-		Delete `template: splash` in `src/content/docs/index.mdx` to display a
-		sidebar on this page.
+	<Card title="Direct Counselor Access" icon="heart">
+		Quickly schedule a one-on-one session with a school counselor or support staff. Find the help you need, safe and fast.
 	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
+	<Card title="Transparent Status Checking" icon="approve-check-circle">
+		Check the progress of your submitted report at any time. Stay informed without having to ask.
 	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
+	<Card title="Learn and Understand" icon="information">
+		Access resources to learn more about bullying, mental health, and finding support in your school.
 	</Card>
 </CardGrid>
