@@ -16,15 +16,16 @@ export default defineConfig({
 			customCss: ['./src/assets/landing.css'],
 			sidebar: [
 				{
-					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
-					],
+					label: 'Start Here',
+					autogenerate: { directory: 'start' }
 				},
 				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+					label: 'User Guides',
+					autogenerate: { directory: 'user-guides' }
+				},
+				{
+					label: 'Development',
+					autogenerate: { directory: 'development' },
 				},
 			],
 		}),
