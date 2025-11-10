@@ -1,13 +1,22 @@
 ---
 title: What is SafePoint?
 description: Know more about the project and what it aims to address.
+
 ---
 
 import { Aside } from '@astrojs/starlight/components';
+import { Image } from 'astro:assets';
+import screenshot from '../../../assets/screenshot.png';
 
-<Aside>This project is still under development. You can follow our progress in GitHub.</Aside>
+<Aside>This project is still under development. You can follow our progress in [GitHub](https://github.com/keiaa-75/safepoint).</Aside>
 
-![A mockup of SafePoint running in various devices.](../../../assets/screenshot.png)
+<Image
+  src={screenshot}
+  alt="A mockup of SafePoint running in various devices."
+  width={950}
+  height={540}
+  loading="eager"
+/>
 
 SafePoint is a free and open-source web application designed to provide students with a safe, accessible, and trusted way to report bullying incidents and schedule counseling sessions.
 
