@@ -12,12 +12,22 @@ export default defineConfig({
 				dark: '/src/assets/logo-dark.svg',
 				replacesTitle: true,
 			},
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/keiaa-75/safepoint' }],
-			customCss: ['./src/assets/landing.css'],
+			social: [
+				{ icon: 'github', label: 'GitHub', href: 'https://github.com/keiaa-75/safepoint' },
+				{ icon: 'discord', label: 'Discord', href: 'https://discord.gg/mc2XSuu7bq' },
+			],
+			customCss: [
+				'./src/assets/global.css',
+				'./src/assets/landing.css',
+			],
 			sidebar: [
 				{
 					label: 'Start Here',
-					autogenerate: { directory: 'start' }
+					items: [
+						'start/what-is-safepoint',
+						'start/for-students',
+						'start/for-counselors',
+					]
 				},
 				{
 					label: 'User Guides',
